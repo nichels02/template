@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f2c0350b34c6044868d58dd3132c10, type: 3}
+  m_Name: ListaDeEscenas
+  m_EditorClassIdentifier: 
+  ListaDeEscenas:
+  - {fileID: 11400000, guid: cfd88819e04fd4b40bf361c61c067492, type: 2}
+  - {fileID: 11400000, guid: 3e82b253ac163984daa7711638397569, type: 2}
+  - {fileID: 11400000, guid: 8285a1d0927e0be43a86b293318f4b9a, type: 2}
+  - {fileID: 11400000, guid: e2b01ea8084762b4fb469f9643012fd3, type: 2}

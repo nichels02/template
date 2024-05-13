@@ -4,17 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor;
 
-[CreateAssetMenu(fileName = "NuevoObjeto", menuName = "SO/Escena")]
+[CreateAssetMenu(fileName = "NuevoObjeto", menuName = "SO/Escenas/LaEscena")]
 public class SOSceneController : ScriptableObject
 {
     [SerializeField] SceneAsset Escena;
     public bool EstaActivo;
     public void CargarEscena()
     {
+        Debug.Log("2");
         if (!EstaActivo)
         {
             SceneManager.LoadSceneAsync(Escena.name, LoadSceneMode.Additive);
             EstaActivo = true;
+            Debug.Log("3");
         }
     }
 
@@ -27,5 +29,10 @@ public class SOSceneController : ScriptableObject
         }
         // Descargar la escena por su nombre
         
+    }
+
+    private void OnDisable()
+    {
+        EstaActivo = false;
     }
 }
